@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-color: #fff;
+  --border-color: #000;
+  --text-color: #000;
+  --card-gap: 50px;
+  --header-margin: 100px;
+  --text-gap: 25px;
+  --border-size: 2px;
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', cursive;
+  --header-padding: 120px;
+  --dialog-bottom: 100px
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-padding: 128px;
+    --dialog-bottom: 103px;
+  }
+}
