@@ -10,7 +10,8 @@
   --main-font: 'Inter', sans-serif;
   --accent-font: 'PressStart2P', cursive;
   --header-padding: 120px;
-  --dialog-bottom: 100px
+  --dialog-bottom: 100px;
+  --icon-color: #f00;
 }
 
 @media (min-width: 768px) {

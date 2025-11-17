@@ -138,8 +138,34 @@
   font-family: var(--accent-font);
 }
 
+.card__icon-button {
+  border: none;
+}
+
 .button {
   background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.card__icon-button::before {
+  content: none;
+}
+
+.button:hover::before {
+  transform: translateX(0);
 }
 
 .button:hover {
