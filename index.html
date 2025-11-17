@@ -228,7 +228,6 @@
       <button
         class="save-button button"
         type="button"
-        aria-controls="dialog-id"
         onclick="window['dialog-id'].showModal()"
       >
         <svg viewBox="0 0 39 39" class="floppy floppy-icon">
@@ -242,13 +241,13 @@
       >
         <div class="dialog-title">
           <svg viewBox="0 0 39 39" class="floppy floppy-icon">
-            <use href="./svg/floppy.svg"></use>
+            <use href="./svg/floppy.svg#"></use>
           </svg>
           <p class="text-button">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
           class="dialog-button button"
-          type="button"
+          type="submit"
           onclick="window['dialog-id'].close()"
         >
           <span class="text-button">ок</span>
