@@ -129,6 +129,7 @@
 
 .card__like-button {
   display: flex;
+  background-color: transparent;
   height: 38px;
   width: 130px;
   border: 2px solid var(--border-color);
@@ -137,6 +138,11 @@
   font-size: 14px;
   line-height: 90%;
   font-family: var(--accent-font);
+  transition: color 0.5s ease-in-out;
+}
+
+.card__like-button .button-text {
+  z-index: 1;
 }
 
 .card__icon-button {
@@ -149,24 +155,26 @@
   overflow: hidden;
 }
 
-.button::before {
+.card__like-button::before {
   content: '';
   position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
-  top: 0;
+  width: 0;
+  height: 100%;
   left: 0;
   background-color: #000;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(-100%);
+  transition: width 0.5s ease-in-out;
 }
 
 .card__icon-button::before {
   content: none;
 }
 
-.button:hover::before {
-  transform: translateX(0);
+.card__like-button:hover::before {
+  width: 100%;
+}
+
+.card__like-button:hover {
+  color: #fff;
 }
 
 .button:hover {
