@@ -181,9 +181,6 @@
 
 .button:hover {
   color: #fff;
-}
-
-.button:hover {
   cursor: pointer;
 }
 
@@ -288,7 +285,6 @@
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
   display: flex;
-  background-color: transparent;
   align-items: center;
   justify-content: center;
 }
