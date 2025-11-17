@@ -24,6 +24,7 @@
     linear-gradient(to bottom,#e7e7e7 0.01%,#1a1a1a 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-variation-settings: 'wght' 400;
 }
 
 .header {
@@ -181,21 +182,21 @@
   outline: none;
 }
 
-/* photos  filters */
+/* photos filters */
 
 .sprint_i-clean .bus-image {
   filter: grayscale(80%);
 }
 
-.sprint_what-if-not .bus-image{
+.sprint_what-if-not .bus-image {
   filter: hue-rotate(25deg) contrast(200%);
 }
 
-.sprint_to-ideal .bus-image{
+.sprint_to-ideal .bus-image {
   filter: hue-rotate(45deg);
 }
 
-.sprint_who-near .bus-image{
+.sprint_who-near .bus-image {
   filter: invert(90%);
 }
 
